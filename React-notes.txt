@@ -1,18 +1,24 @@
-Q1. What is Recat? What is the role of React in software development?  ******
+Q1. What is React? What is the role of React in software development?  
 Ans:
 1. React is an open source javascript library.
 2. React is used to building user interfaces(UI).
-3. React is simplefys the creation of SPA(Single Page Application) by using reusable components.
+3. React is simplifies the creation of SPA(Single Page Application) by using reusable components.
 
 Q2. What are the key features of React?
 Ans: React has seven main keyfeature:
-1. Virtual development.
-2. Components based architecture.
-3. Reusability & Composition.
-4. JS-Javascript XML.
-5. Declaritve Syntex.
-6. Community and Ecosyatem.
-7. React hooks.
+Virtual DOM: React uses a Virtual DOM for efficient updates, only modifying changed parts in the real DOM instead of re-rendering the entire UI.
+
+Component-Based Architecture: React applications are built using reusable components, making it easy to structure, organize, and maintain complex UIs.
+
+Reusability & Composition: Components can be reused across different parts of an application, and they can be composed together to build complex UIs from simple parts.
+
+JSX (JavaScript XML): JSX is a syntax extension that combines JavaScript and HTML-like code, making it easier to write and visualize the UI structure directly within JavaScript.
+
+Declarative Syntax: React’s syntax is declarative, meaning you describe what the UI should look like, and React takes care of updating the DOM based on changes in data.
+
+Community and Ecosystem: React has a large, active community and ecosystem, offering extensive libraries, tools, and resources that make development faster and more powerful.
+
+React Hooks: Hooks are special functions that enable functional components to use features like state and lifecycle methods, enhancing component functionality and code simplicity.
 
 Q3. What is DOM? What is the difference b/w DOM and HTML?
 Ans:
@@ -24,20 +30,9 @@ Note: Memory always plays with DOM not with HTML.
 Q4. What is Virtual DOM? Differense between Virtual and Real DOM?
 Ans: The Virtual DOM in React is a lightweight representation of the real DOM. When a component’s state or props change, React creates an updated Virtual DOM and compares it to the previous one to identify changes. This process, called reconciliation, allows React to update only the changed parts in the real DOM, making updates faster and more efficient without re-rendering the entire page.
 
-Real DOM:
-Actual UI representation in the browser
-Slower, with frequent re-rendering of the DOM
-Entire DOM may re-render on changes
-Standard DOM in web browsers
+During reconciliation, React uses a "diffing algorithm" to detect changes between the previous and updated Virtual DOM versions. React then updates only the necessary parts of the Real DOM based on these differences, ensuring efficient and minimal updates.
 
-Virtual DOM:
-Lightweight JavaScript object representing UI
-Updates happen in memory first, then sync with Real DOM
-Faster, as only changed parts are updated in Real DOM
-Only modified elements re-render, minimizing work
-Used by React and similar libraries for efficiency
-
-Q5. What are the React component? What are the main elements of its?
+Q5. What are the React component? What are the main elements of it?
 Ans:
 React components are the building blocks of a React application. They are reusable, independent pieces of UI, like buttons, forms, or entire sections of a webpage. Components can be thought of as JavaScript functions or classes that return HTML elements.
 
@@ -56,9 +51,20 @@ Ans:
 Q8. What is the disadvantage of React?
 Ans: React is a good choice for the multiple component based or dynamic web application. So React is not good choice for the small application, in that case we should use HTML, CSS and JS.
 
-Q9. What is the role of JSX i n React? 3 Points
+Q9. What is the role of JSX in React? 3 Points
 Ans:
-1. JSX stands for 
+1. JSX stands for javascript XML
+2. JSX is used by React to write the HTML-like-code3.
+3. JSX is converted to JavaScript via tool like Bable (Because browser only understand HTML, CSS and JS not JSX)
+
+Q10. What is the difference b/w declarative and Imperative Syntax?
+Ans:
+Declarative syntax is used in React by using JSX.
+Imperative syntax is write by using pure JavaScript.
+
+
+
+
 
 
 
