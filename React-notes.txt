@@ -62,6 +62,46 @@ Ans:
 Declarative syntax is used in React by using JSX.
 Imperative syntax is write by using pure JavaScript.
 
+Q11. How React App load and display the components ib browser?
+Ans: First of all a user load the UI in the browser then the request flows in this way>>
+    USER => Index.html => Index.js => App.js => Components
+
+    index.html - Single page which loads index.js by React libraries
+    index.js - Replace root elements of index.html file by App component
+    App.js - Root component which is the container of all child components.
+    ChildComponents - Custom child components placed over app component.
+
+Q12. What is the diff between React and Angular?
+Ans:
+    Common point => React and Angular both are used to create the single page UI application using components.
+
+    React => 
+    1. React is a JavaScript library.
+    2. React uses a Virtual DOM, which  make it faster.
+    3. React is smaller in size and lightweight and therefor faster sometime.
+    4. React depands on external libraries for complax features, so developers have to write many lines of code for complax functions.
+    5. React is simple to learn and more populer than Angular.
+
+    Angular =>
+    1. Angular is complete farmework.
+    2. Angular use Real DOM.
+    3. Angular is bigger because it is a complete farmework.
+    4. Since Angular is a complete farmework, therefor it provide some built-in support for features like routing, forms, validation and HTTPS requests.
+    5. Angular is slightly difficult to learn as it has Typescript, OOPs concepts and many more things.
+
+Q13. How React provides Reusability and Composition?
+Ans:
+    Reusability: Once you create the component in React then you can re-use it in different parts of your application or even in multiple projects.
+
+    Composition: Composition is creating new and big components by combining existing small components. its advantage is, change to one small component will not impact other components. 
+             
+Q14. What is state,stateless, stateful and state management?
+Ans:
+    "State" refer to the current data of the component.
+    Stateful or state management means, when a user perform some action on the UI, then react applicationshould be able to update and re-rander the data or state on the UI.
+
+Q15. What are the "props" in JSX?
+Ans: "props" (properties) are a way to pass the data from a parant component to the child component.
 
 
 
