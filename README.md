@@ -77,7 +77,6 @@ When a user loads the UI in the browser, the request flows as follows:
 
 USER => Index.html => Index.js => App.js => Components
 
-
 - **index.html**: A single page that loads `index.js` using React libraries.
 - **index.js**: Replaces the root element in `index.html` with the App component.
 - **App.js**: The root component that contains all child components.
