@@ -115,8 +115,114 @@ Ans:
 
     The div with "id = root" will be replaced by the component inside index.js file.
 
+Q17. What is the role of index.js file and ReactDOM in React?
+Ans: 
+    # The index.js file is the JavaScript file that replaces the root element of the index.html file with the newly rendered components.
+    # ReactDOM is a JavaScript library thet renders components to the DOM or browser.
+
+Q18. What is the role od App.js file in React?
+Ans: 
+    App.js file contains the root component App of React application.
+    App component is like a container for other Components.
+    App.js defines the structure, layout and routing in the application.
+
+Q19. What are the advantage of JSX?
+Ans: 
+    1. Improve code readability and writability.
+    2. Error checking in advance (Type safety).
+    3. Support JavaScript expression.
+    4. Improved performance
+    5. Code Reusability.
+
+Q20. What is the role of Fragment in JSX?
+Ans:
+    In React a Fragment is a way to group multiple children's elements.
+    Using a Fragment prevents the addition of unnecessary nodes to the DOM. 
+
+Q21. What is Spread  Operator in JSX?
+Ans: The Spread Operator (...) is used to expand or spread an array or Object.
+
+Q22. What are the types of Conditional Rendering in JSX?
+Ans: 1. if/else statements
+     2. Ternary operator
+     3. && operator
+     4. Switch statement
+
+Q23. What is Transpiler? What is the difference between Compiler & Transpiler?
+Ans: Transpiler - A Transpiler is a tool that converts source code from one high-level programming language(JSX) to another high-level programming language(JavaScript). Example - Bable
+
+Compiler - A compiler is a tool that converts high-level programming language(java) into a lower-level language (machine code or bytecode).
 
 
+Q24. What is map() method?
+Ans: Map() method allows you to iterateover an array amd modifyed its elements using a callback function. 
+    Syntax: Arr.map((number)=>(number*2))
+
+Q25. What are the React components? What are the main elements of it?
+Ans: In React, a component is a reusable building block for creating user interfaces.
+     Main components: import statements, functional component defination, JSX and export statement. 
+    
+Q26. What are types of components? What is functional component?
+Ans: 1. Functional components are declared as a JavaScript function. 
+    2. They are stateless components, but with the help of hooks, they can now manage state also.
+
+Q27. How do we pass the data between functional components in React?
+Ans: Props (properties) are a way to pass data from a patent component to a child component.
+
+Q28. What is Prop Drilling in React?
+Ans: Prop drilling is the process of passing down props through multiple layers of component.
+
+Q30. Why should we avoid prop drilling? In how many ways can avoid Prop Drilling?
+Ans: Reasons to avoid:
+     1. Maintenance: Prop Drilling can make code harder to maintain as changes in data flow require updates across multiple components.
+     2. Complexity: it increases code Complexity and reduces code readability.
+     3. Debugging: Debugging becomes challenging when props need to be traced through nymerous components.
+
+     5 ways to avoid Prop Drilling
+     1. Using Context API
+     2. Using Redux
+     3. Using Component Composition
+     4. Using Callback functions
+     5. Using Custom hooks
+    
+Q31. What are Class Components In React? 
+Ans: 1. Class components are defined using JavaScript classes. 
+     2. They are statefull components by using the lifecycle methods. 
+     3. The render method in a class Component is responsible fot returning JSX. 
+
+     Sysntex: 
+
+     Import React, {Component} from "react;
+     
+     class AppClass extends Component {
+        render(){
+            return <h1>Interview Happy</h1>;
+        }
+     }
+
+     export default AppClass;
+
+Q32. What are the 5 differences b/w functional ans class Components?
+Ans: Functional Component:
+     1. Syntax: Defined as a JS function.
+     2. State: Originally stateless but can now maintain state unsing hooks.
+     3. Lifecycle methods: No
+     4. Readability: More readable & concise.
+     5. this keyword: No
+     6. Do not have render method. 
+
+     Class component:
+     1. Defined as a JS(ES6) class.
+     2. Can manage local state with this.state
+     3. NO lifecycle method
+     4. Verbose(Complex) code
+     5. Yes (Access prop using this.prop)
+     6. Have render method.
+
+Q33. What is Routing and Router in React?
+Ans: Routing - Allows you to create a single-page web application with navigation, without the need for a full-page refresh.
+
+    Router - React Router is a library for handling routing and enables navigation and rendring of different components based on the URL.
 
 
 
